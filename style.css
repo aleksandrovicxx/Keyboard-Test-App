@@ -23,6 +23,10 @@ body {
   padding: 10px;
   margin: 2px;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .key:hover {
@@ -31,4 +35,19 @@ body {
 
 .key.active {
   background-color: #66bb6a;
+}
+
+/* Specific styling for certain keys */
+.key[data-key="Space"] {
+  width: 200px; /* Width of Space key */
+}
+
+.key[data-key="ShiftLeft"],
+.key[data-key="ShiftRight"] {
+  width: 80px; /* Width of Shift keys */
+}
+
+.key[data-key="Enter"] {
+  width: 80px; /* Width of Enter key */
+  flex-basis: 100%; /* Make Enter key span full width */
 }
