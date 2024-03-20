@@ -36,7 +36,7 @@ border: 1px solid #eeeeee;
 
 }
 
-.delete {
+.deleteandenter {
   grid-column: span 4;
 }
 
@@ -75,4 +75,21 @@ border: 1px solid #eeeeee;
 
 .space {
   grid-column: span 13;
+}
+.navigation-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.page-buttons .key {
+  padding: 0px;
+  height: 50%;
+  overflow: hidden;
+  text-align: center;
 }

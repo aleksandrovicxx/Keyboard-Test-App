@@ -3,8 +3,11 @@ let allDivs = document.querySelectorAll("button")
 
 document.addEventListener("keydown", (e) =>{ 
 
-    let pushedButton = (e.key);
-    console.log(pushedButton);
+    let pushedButton = (e.code);
+
+    pushedButton = pushedButton.toUpperCase()
+    console.log(e.code);
+    
 
     allDivs.forEach(div =>{
         if(div.value == pushedButton){
